@@ -1,7 +1,7 @@
 <?php
 
 namespace Practicals;
-
+use InvalidArgumentException;
 class Song {
     private $title;
     private $artist;
@@ -74,14 +74,14 @@ class Song {
 }
 
 // Example usage:
-$song = new Song();
-$song->setTitle("Bohemian Rhapsody");
-$song->setArtist("Queen");
-$song->setGenre("Rock");
-$song->setTempo("70 BPM");
+// $song = new Song();
+// $song->setTitle("Bohemian Rhapsody");
+// $song->setArtist("Queen");
+// $song->setGenre("Rock");
+// $song->setTempo("70 BPM");
 
-echo "Title: " . $song->getTitle() . "\n";
-echo "Artist: " . $song->getArtist() . "\n";
-echo "Genre: " . $song->getGenre() . "\n";
-echo "Tempo: " . $song->getTempo() . "\n";
+// echo "Title: " . $song->getTitle() . "\n";
+// echo "Artist: " . $song->getArtist() . "\n";
+// echo "Genre: " . $song->getGenre() . "\n";
+// echo "Tempo: " . $song->getTempo() . "\n";
 ?>

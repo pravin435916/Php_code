@@ -23,4 +23,7 @@ class SongsTest extends TestCase
 
         $response->assertStatus(200);
     }
+    Route::get('/songs_static', function () {
+        return view('songs_static');
+    });
 }
