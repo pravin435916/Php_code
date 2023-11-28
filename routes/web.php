@@ -17,7 +17,7 @@ Route::get('/songs_static', function () {
   
     $song2 = new Song();
     $song2->setTitle("New Song");
-    $song2->setArtist("Divyansh");
+    $song2->setArtist("Pravin");
   
     $song3 = new Song();
     $song3->setTitle("With You");
