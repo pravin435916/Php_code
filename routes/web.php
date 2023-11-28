@@ -29,7 +29,9 @@ Route::get('/songs_static', function () {
   Route::get('/songs', function () {
     return view('songs', [ 'songs' => Song::all() ] );
 });
-
+Route::get('/playlists/{playlistId}', function (string $playlistId) {
+    return view('playlists', ['songs'=> Song::all(),'playlistId'=> $playlistId]);
+});
 Route::get('/veggies', function () {
     return view('veggies');
 });

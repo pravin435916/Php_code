@@ -117,7 +117,6 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Add rows for each song -->
                 <tr>
                     <td>1</td>
                     <td>Song 1</td>
@@ -128,11 +127,10 @@
                 <tr>
                     <td>2</td>
                     <td>Song 2</td>
-                    <td>Artist 2</td>
+                    <td>Artist 3</td>
                     <td>Album 2</td>
                     <td>4:15</td>
                 </tr>
-                <!-- Add more rows as needed -->
             </tbody>
         </table>
     </main>
