@@ -6,14 +6,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/songs', function () {
-    $song1 = new Song();
+Route::get('/songs_static', function () {
+    return view('songs_static');
+  });
+  
+  Route::get('/songs', function () {
+        $song1 = new Song();
     $song1->setTitle("Stan");
     $song1->setArtist("Eminem");
   
     $song2 = new Song();
-    $song2->setTitle("Nothing Else Matters");
-    $song2->setArtist("Metallica");
+    $song2->setTitle("New Song");
+    $song2->setArtist("Divyansh");
   
     $song3 = new Song();
     $song3->setTitle("With You");
@@ -21,9 +25,6 @@ Route::get('/songs', function () {
   
     return view('songs', [ 'songs' => [ $song1, $song2, $song3 ] ]); 
   });
-  Route::get('/songs_static', function () {
-    return view('songs_static');
-});
 
 Route::get('/veggies', function () {
     return view('veggies');
